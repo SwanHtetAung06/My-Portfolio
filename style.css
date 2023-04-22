@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Jura', sans-serif;
+    background-color: #1B1B1B;
+    color:white;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+/*Main background-image*/
+main {
+    background-image: url("One\ Step\ Closer\ Today\ -\ Poster\ Design.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+.main-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top: 150px;
+}
+
+
+
+/*Header & p styling*/
+.name-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.4em;
+}
+.name-container h2 {
+    font-size: 50px;
+    position: relative;
+    top: -10px;
+    letter-spacing: 2px;
+}
+
+.name-container p {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    letter-spacing: 1px;
+}
+.name-container p::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 0%;
+    height: 3px;
+    border-bottom: 1px solid white;
+}
+.name-container div:hover p::before{
+    transition: all 0.8s ease-in-out;
+    width: 55%;
+}
+
+.name-container p:hover{
+    transition: all 0.8s ease-in-out;
+    transform: scale(1.05);
+    transform: translateX(60px);
+    cursor: pointer;
+}
+
+/*Btn Styling*/
+.btn-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60px;
+}
+.btn-container button {
+    border: none;
+}
+.btn-container a{
+    color: white;
+    text-decoration: none;
+    background-color: #1B1B1B;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    letter-spacing: 3px;
+}
+.btn-container a:hover {
+    transition: all 0.6s ease-in-out;
+    font-size: 20px;
+    background-color: white;
+    color: #1B1B1B;
+}
+
+ /*Box Styling*/
+.box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3em;
+}
+
+#august{
+    border-radius: 5px;
+    width: 270px;
+    height: 260px;
+    cursor: pointer;
+    
+}
+#august:hover{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.02);
+    filter: hue-rotate(30deg); 
+}
+.box-letter{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:3px;
+}
+.box-letter h2{
+    font-size: 30px;
+    position: relative;
+    top: -4px;
+    letter-spacing: 2px;
+}
+.box-letter p{
+    letter-spacing: 1px;
+}
+.animated-counter {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 0.8em;
+}
+.animated-Text{
+    background-color: #131212;
+    padding: 3px 4px;
+}
+.percent{
+    background-color: #FEDE00;
+    width: 30px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/*Card Styling*/
+
+.card{
+    margin-top: 5em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.card h1{
+    font-size: 35px;
+    margin-bottom: 1.5em;
+    letter-spacing: 4px;
+}
+.card-box{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+.card-item {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+.card-item h2,p{
+    letter-spacing: 1px;
+}
+
+.card-comment {
+    margin-top: 2.5em;
+}
+
+/*Portfolio  Styling*/
+#portfolio{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 4em;
+    align-items: center;    
+    gap: 10px;
+}
+#portfolio h2{
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#portfolio li{
+    list-style-type: none;
+}
+#portfolio li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.work-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.work-box {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 10px;
+    background-color:#131212;
+    width: 100%;
+    border-radius: 5px;
+    height: 220px;
+    opacity: 0.5;
+    cursor: pointer;
+    position: relative;
+}
+.work-box:hover {
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+
+.work-box a{
+    text-decoration: none;
+    color: white;
+}
+.work-box:hover a::before {
+    content: "click to check";
+    position: absolute;
+    top: 120px;
+    left: 80px;
+}
+
+/*Contact Styling*/
+#contact {
+    margin-top: 3em;
+    font-size: 2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+
+#firstPart, #secondPart {
+    display: flex;
+    gap: 7em;
+}
+.facebook,.instagram,.github,.discord {
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+}
+
+
+/*Animation Sliders Accumulation*/
+.slider {
+    animation: imgSlider 2s;
+}
+.widthSlider {
+    animation: abilitySlider 2s;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px 20px;
+}
+
+.boxSlider {
+    animation: boxSlider 2.5s;
+}
+.containerSlider {
+    animation: containerSlider 3s;
+}
+
+
+/*Nav Bar Styling*/
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.6em;
+}
+
+.nav-bar h2{
+    font-family: 'Caveat', cursive;
+     position: relative;
+    left: -150px;
+    font-size: 30px;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+.nav-bar  li{
+    list-style-type: none;
+    position: relative;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.nav-bar a:hover{
+    transition: all 0.4s ease-in-out;
+    font-size: 18px;
+    filter: brightness(90%);
+}
+.nav-bar a::before {
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 17px;
+    width: 0;
+    border-bottom: 1.4px solid;
+}
+.nav-bar li:hover  a::before {
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+}
+#menuIcon {
+    display: none;
+}
+#existIcon {
+    display: none;
+    
+}
+
+
+
+@keyframes imgSlider {
+    from {
+        transition: all 1s ease-in-out;
+        transform: translateX(-200px);
+    }
+    to{
+        transition: all 1s ease-in-out;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes abilitySlider {
+    from{
+        transition: all 2s ease-in-out;
+        width: 30%;
+    }
+    to{
+        transition: all 2s ease-in-out;
+        width: 90%;
+    }
+}
+@keyframes boxSlider {
+    from{
+        transition: all 0.5s ease-in-out;
+        transform: translateX(-200px);
+        opacity: 0.4;
+    }
+    to{
+        transition: all 0.5s ease-in-out;
+        transform: translateX(0px);
+        opacity: 0.8;
+    }
+}
+
+@keyframes containerSlider {
+    from{
+        transition: all 2s ease-in-out;
+        transform: translateX(-200px);
+    }
+    to{
+        transition: all 2s ease-in-out;
+        transform: translateX(0px);
+    }
+}
+
+
+@media screen and (max-width:800px){
+    body{
+        width: 115%;
+    }
+    .nav-bar h2{
+        position: relative;
+        left: 190px;
+        top: 20px;
+        font-size:40px;
+    }
+    
+    .nav-bar ul {
+        display: none;
+
+    }
+    
+    #menuIcon {
+        display: block;
+        position: relative;
+        top: 35px;
+        left: 100px;
+        font-size: 25px;
+    }
+    
+    #august{
+        width: 250px;
+        margin: 20px;
+    }
+    .box-letter {
+        width: 70%;
+        margin-right: 15px;
+    }
+    .card-box {
+        margin: 5px 20px;
+    }
+    #contact {
+        display: flex;
+        gap: 4em;
+        font-size: 35px;
+    }
+    .facebook {
+        position: relative;
+        left: 110px;
+    }
+    .discord {
+        position: relative;
+        left: -110px;
+    }
+}
+
+@media  screen and (max-width:700px) {
+    
+    .card-box {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        width: 60%;
+        gap: 1em;
+    }
+
+
+    .work-container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 50%;
+    }
+    .work-box:hover a::before {
+        position: absolute;
+        top: 120px;
+        left: 145px;
+    }
+}
+@media screen and (max-width:400px){
+    body{
+        width: 210%;
+    }
+}
